@@ -75,7 +75,7 @@ class Stock extends Workflows
     */
     protected function get_code($chars)
     {
-        $keys = array('brief', 'board', 'code', 'Code', 'name', 'pinyin', 'name2', 'key2');
+        $keys = array('brief', 'board', 'code', 'Code', 'name', 'pinyin', 'name2', 'key2', 'key3');
         
         $info = $this->curl($this->api['info'].$chars);
         function combine(&$value, $key, $keys)
